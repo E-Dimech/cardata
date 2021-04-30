@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cardata</title>
     <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <h1 class="hero__title">Cardata</h1>
@@ -14,6 +25,7 @@
         <label class="form__user-label" for="user"
           ><b>Username or Email</b></label
         >
+        <i class="fas fa-envelope form__user-img"></i>
         <input
           class="form__user-input"
           type="text"
@@ -25,8 +37,11 @@
       <div class="form__psw-container">
         <div class="form__psw-label-wrp">
           <label class="form__psw-label" for="psw"><b>Password</b></label>
-          <label class="form__psw-label" for="psw"><b>Remember Me</b></label>
+          <label class="form__psw-label-remember" for="psw"
+            ><b>Remember Me</b></label
+          >
         </div>
+        <i class="fas fa-lock form__psw-lock-img"></i>
         <input
           class="form__psw-input"
           type="password"
@@ -34,6 +49,7 @@
           name="psw"
           required
         />
+        <!-- <i class="fas fa-lock form__psw-lock-img"></i> -->
       </div>
 
       <button class="form__button" type="submit">Log In</button>
@@ -41,7 +57,7 @@
     </div>
 
     <footer>
-      <p>Contact Support</p>
+      <p class="footer__contact">Contact Support</p>
     </footer>
   </body>
 </html>

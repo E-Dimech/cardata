@@ -61,7 +61,7 @@ nav {
 }
 .home__tracking-wrp {
   border-top: 1px solid #dfe0e5;
-  padding-top: 30px;
+  padding: 25px 0;
 }
 .home__tracking-card {
   margin: 0 5%;

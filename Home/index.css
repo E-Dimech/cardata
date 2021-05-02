@@ -45,3 +45,42 @@ nav {
 .home__hero-tracking-info--bold {
   font-weight: 800;
 }
+.test0 {
+  display: flex;
+}
+.test {
+  border: 1px solid black;
+  border-radius: 10px 0 0 10px;
+  /* display: block; */
+  font-family: "Poppins";
+  font-size: 0.6rem;
+  margin-left: 5%;
+  width: 75px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.test1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+  height: 20px;
+  margin: 0;
+  font-family: "Poppins";
+  font-size: 0.6rem;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.test2 {
+  border: 1px solid black;
+  border-radius: 0 10px 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins";
+  font-size: 0.6rem;
+  width: 75px;
+  height: 20px;
+}

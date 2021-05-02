@@ -40,20 +40,33 @@ nav {
   margin-top: 15px;
 }
 .home__hero-tracking-info {
-  margin: 5% 10%;
+  margin: 5% 5%;
 }
 .home__hero-tracking-info--bold {
   font-weight: 800;
 }
-.test0 {
-  display: flex;
+.home__tracking-wrp {
+  border-top: 1px solid black;
+  padding-top: 30px;
 }
-.test {
+.home__tracking-card {
+  margin: 0 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.home__tracking-date {
+  margin: 0;
+  font-size: 1.5rem;
+}
+.home__tracking-time-select {
+  display: flex;
+  /* margin-top: 10px; */
+}
+.home__tracking-time-start {
   border: 1px solid black;
   border-radius: 10px 0 0 10px;
-  /* display: block; */
   font-family: "Poppins";
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   margin-left: 5%;
   width: 75px;
   height: 20px;
@@ -61,26 +74,77 @@ nav {
   justify-content: center;
   align-items: center;
 }
-.test1 {
+.home__tracking-time-text {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 15px;
-  height: 20px;
+  width: 20px;
+  height: 18px;
   margin: 0;
   font-family: "Poppins";
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
 }
-.test2 {
+.home__tracking-time-end {
   border: 1px solid black;
   border-radius: 0 10px 10px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Poppins";
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   width: 75px;
   height: 20px;
+}
+
+/* The switch - the box around the slider */
+.home__tracking-toggle {
+  position: relative;
+  display: inline-block;
+  width: 43px;
+  height: 23px;
+  margin-bottom: 15px;
+}
+
+/* Hide default HTML checkbox */
+.home__tracking-input {
+  display: none;
+}
+
+/* The slider */
+.home__tracking-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10px;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.home__tracking-slider:before {
+  position: absolute;
+  content: "";
+  height: 19px;
+  width: 19px;
+  left: 2px;
+  bottom: 1.75px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .home__tracking-slider {
+  background-color: #981eda;
+}
+
+input:checked + .home__tracking-slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
 }

@@ -23,13 +23,13 @@
         <p class="home__mobile-time">9:41</p>
       </div>
       <div class="home__mobile-icons-wrp">
-        <i class="fas fa-signal home__mobile-icons"></i>
-        <i class="fas fa-wifi home__mobile-icons"></i>
-        <i class="fas fa-battery-full home__mobile-icons"></i>
+        <i class="home__mobile-icons fas fa-signal"></i>
+        <i class="home__mobile-icons fas fa-wifi"></i>
+        <i class="home__mobile-icons fas fa-battery-full"></i>
       </div>
     </div>
     <nav>
-      <i class="fas fa-bars home__nav-hamburger"></i>
+      <i class="home__nav-hamburger fas fa-bars"></i>
     </nav>
     <div class="home__hero">
       <h1 class="home__hero-title">Settings</h1>
@@ -43,10 +43,31 @@
         >
       </p>
     </div>
-    <div class="test0">
-      <input class="test" type="time" value="01:00" />
-      <p class="test1">to</p>
-      <input class="test2" type="time" value="23:59" />
+    <div class="home__tracking-wrp">
+      <div class="home__tracking-card">
+        <p class="home__tracking-date">Monday</p>
+        <label class="home__tracking-toggle">
+          <input class="home__tracking-input" type="checkbox" />
+          <span class="home__tracking-slider"></span>
+        </label>
+      </div>
+      <div class="home__tracking-time-select">
+        <select class="home__tracking-time-start" name="time" id="time">
+          <option value="01:00AM">01:00 AM</option>
+          <option value="02:00AM">02:00 AM</option>
+          <option value="03:00AM">03:00 AM</option>
+          <option value="04:00AM">04:00 AM</option>
+          <option value="05:00AM">05:00 AM</option>
+        </select>
+        <p class="home__tracking-time-text">to</p>
+        <select class="home__tracking-time-end" name="time" id="time">
+          <option value="01:00AM">11:59 PM</option>
+          <option value="02:00AM">11:00 PM</option>
+          <option value="03:00AM">10:30 PM</option>
+          <option value="04:00AM">10:00 PM</option>
+          <option value="05:00AM">09:30 PM</option>
+        </select>
+      </div>
     </div>
   </body>
 </html>
